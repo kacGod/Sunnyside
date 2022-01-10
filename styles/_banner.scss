@@ -1,0 +1,32 @@
+.banner {
+    background: url("../images/desktop-image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display:flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    .banner-heading {
+        font-size: 2.6rem;
+        text-align: center;
+        letter-spacing: 5px;
+        color: hsl(0, 0%, 100%);
+        text-transform: uppercase;
+        height: max-content;
+        position: relative;
+        &:after {
+            content: "";
+            background: url("../images/icon-arrow-down.svg");
+            position: absolute;
+            bottom: -164px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 114px;
+            width: 36px;
+            background-repeat: no-repeat;
+        }
+    }
+}

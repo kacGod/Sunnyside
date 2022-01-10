@@ -1,0 +1,21 @@
+@import "navbar";
+@import "banner";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+h1,h2,h3,h4,h5,h6,
+a {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 900;
+}

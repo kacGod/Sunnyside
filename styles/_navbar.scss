@@ -1,0 +1,54 @@
+.navbar-logo {
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 19px;
+    background-color: #3ebfff;
+    .navbar-nav {
+        display: none;
+        padding: 25px 0;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%,-25%);
+        text-decoration: none;
+        list-style-type: none;
+        background-color: #fff;
+        width: calc(100% - 40px);
+        li {
+            text-align: center;
+            padding: 20px 0;
+            color: #717171;
+        }
+        .cont {
+            background: hsl(51, 100%, 49%);
+            color: #000;
+            padding: 15px 25px;
+            border-radius: 35px;
+        }
+    }
+    .hamburger {
+        cursor: pointer;
+    }
+}
+
+.navbar-nav.active {
+    display: block;
+}
+
+.navbar-nav:before {
+    content: "";
+    display: block;
+    background-image: url("../images/tri.svg");
+    position: absolute;
+    top: -50px;
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    right: 0;
+    z-index: 99;
+}

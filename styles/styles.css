@@ -1,0 +1,128 @@
+.navbar-logo {
+  color: #fff;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 19px;
+  background-color: #3ebfff;
+}
+
+.navbar .navbar-nav {
+  display: none;
+  padding: 25px 0;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  -webkit-transform: translate(-50%, -25%);
+          transform: translate(-50%, -25%);
+  text-decoration: none;
+  list-style-type: none;
+  background-color: #fff;
+  width: calc(100% - 40px);
+}
+
+.navbar .navbar-nav li {
+  text-align: center;
+  padding: 20px 0;
+  color: #717171;
+}
+
+.navbar .navbar-nav .cont {
+  background: #fad400;
+  color: #000;
+  padding: 15px 25px;
+  border-radius: 35px;
+}
+
+.navbar .hamburger {
+  cursor: pointer;
+}
+
+.navbar-nav.active {
+  display: block;
+}
+
+.navbar-nav:before {
+  content: "";
+  display: block;
+  background-image: url("../images/tri.svg");
+  position: absolute;
+  top: -50px;
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  right: 0;
+  z-index: 99;
+}
+
+.banner {
+  background: url("../images/desktop-image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.banner .banner-heading {
+  font-size: 2.6rem;
+  text-align: center;
+  letter-spacing: 5px;
+  color: white;
+  text-transform: uppercase;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: relative;
+}
+
+.banner .banner-heading:after {
+  content: "";
+  background: url("../images/icon-arrow-down.svg");
+  position: absolute;
+  bottom: -164px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 114px;
+  width: 36px;
+  background-repeat: no-repeat;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6,
+a {
+  font-family: 'Fraunces', serif;
+  font-style: normal;
+  font-weight: 900;
+}
+/*# sourceMappingURL=styles.css.map */
